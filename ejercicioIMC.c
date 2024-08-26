@@ -23,7 +23,7 @@ int main(int argc, char const *argv[])
 
 }
 
-float calcula_imc(float peso,float estatura) //para usarla ya no lleva ; sino llaves. También hay que pasarle los argumentos que necesita
+float calcula_imc(float peso,float estatura) //definición. Para usarla ya no lleva ; sino llaves. También hay que pasarle los argumentos que necesita
 {
     float IMC;
     //IMC = peso/estatura al cuadrado
