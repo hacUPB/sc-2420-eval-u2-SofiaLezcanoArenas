@@ -1,6 +1,4 @@
-Entendido, Henry. Dado que estás utilizando Microsoft Visual Studio, es posible que necesites agregar algunas entradas adicionales al archivo `.gitignore` para ignorar los archivos y directorios específicos que genera este entorno de desarrollo. Aquí tienes una versión actualizada del archivo `.gitignore` para tu proyecto en C con SDL2 y SDL2_ttf en Microsoft Visual Studio:
 
-```
 # Ignorar archivos generados por el compilador
 *.obj
 *.exe
@@ -122,6 +120,3 @@ x86/
 
 #Ignorar carpetas generadas por Visual Studio Code
 /.vscode/
-```
-
-Esto debería ayudarte a ignorar los archivos y directorios generados por Visual Studio que no necesitas versionar.
