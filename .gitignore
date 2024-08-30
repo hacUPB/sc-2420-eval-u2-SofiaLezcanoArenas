@@ -25,7 +25,7 @@ Entendido, Henry. Dado que estás utilizando Microsoft Visual Studio, es posible
 # Ignorar archivos generados por Visual Studio
 [Dd]ebug/
 [Rr]elease/
-x64/
+/Proyecto_config_SDL2/x64/
 x86/
 [Aa][Rr][Mm]/
 *.dbp
@@ -117,6 +117,9 @@ x86/
 *.VC.VC.opendb
 *.VC.VC.opendb
 *.VC.VC.opendb
+
+#Ignorar carpetas generadas por Visual Studio Code
+/.vscode/
 ```
 
 Esto debería ayudarte a ignorar los archivos y directorios generados por Visual Studio que no necesitas versionar.
