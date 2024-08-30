@@ -1,6 +1,6 @@
 # Documentación del Proyecto
 ## Unidad 2
 
-Estudiante:  
-Id:  
+Estudiante: Sofía Lezcano Arenas 
+Id: 164884
 ---

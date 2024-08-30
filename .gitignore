@@ -23,6 +23,8 @@ Entendido, Henry. Dado que estás utilizando Microsoft Visual Studio, es posible
 *.tmp
 
 # Ignorar archivos generados por Visual Studio
+/Game_loop_SDL2/Ejercicio1/codigoFuenteEjVideo/.vs/
+/Game_loop_SDL2/Ejercicio1/codigoFuenteEjVideo/x64/
 [Dd]ebug/
 [Rr]elease/
 /Proyecto_config_SDL2/x64/
