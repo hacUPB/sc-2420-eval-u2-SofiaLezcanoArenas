@@ -23,6 +23,9 @@
 # Ignorar archivos generados por Visual Studio
 /Game_loop_SDL2/Ejercicio1/codigoFuenteEjVideo/.vs/
 /Game_loop_SDL2/Ejercicio1/codigoFuenteEjVideo/x64/
+/Game_loop_SDL2/Ejercicio1/printf/.vs/
+/Game_loop_SDL2/Ejercicio1/printf/x64/
+/Game_loop_SDL2/Ejercicio1/printf/printf/
 [Dd]ebug/
 [Rr]elease/
 /Proyecto_config_SDL2/x64/
