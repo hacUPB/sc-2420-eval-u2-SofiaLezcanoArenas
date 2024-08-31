@@ -1,6 +1,7 @@
 # Ejercicio 2: Calculando el Tiempo de Ejecución
 
 ## Tiempos:
+![tiempos](https://github.com/hacUPB/sc-2420-eval-u2-SofiaLezcanoArenas/blob/main/Game_loop_SDL2/Ejercicio2/tiempos%20de%20ejecuci%C3%B3n.png)
 
 Se puede apreciar que en un segundo se ejecutan cuatro veces update y render.
 
