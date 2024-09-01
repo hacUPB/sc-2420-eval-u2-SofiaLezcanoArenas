@@ -124,6 +124,7 @@ void render(void) {
     SDL_RenderClear(renderer);
 
     // Draw a rectangle for the ball object
+    SDL_SetRenderDrawColor(renderer, 200, 0, 100, 255);
     SDL_Rect ball_rect = {
         (int)ball.x,
         (int)ball.y,
