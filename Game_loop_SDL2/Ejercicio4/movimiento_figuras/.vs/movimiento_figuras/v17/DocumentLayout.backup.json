@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sofia\\Documents\\Repositorios\\sc-2420-eval-u2-SofiaLezcanoArenas\\Game_loop_SDL2\\Ejercicio4\\movimiento_figuras\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AD9C5DB1-5C1E-4DC7-80AC-FDF823A959F7}|Ejercicio3.vcxproj|C:\\Users\\sofia\\Documents\\Repositorios\\sc-2420-eval-u2-SofiaLezcanoArenas\\Game_loop_SDL2\\Ejercicio4\\movimiento_figuras\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AD9C5DB1-5C1E-4DC7-80AC-FDF823A959F7}|Ejercicio3.vcxproj|solutionrelative:main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.c",
+              "DocumentMoniker": "C:\\Users\\sofia\\Documents\\Repositorios\\sc-2420-eval-u2-SofiaLezcanoArenas\\Game_loop_SDL2\\Ejercicio4\\movimiento_figuras\\main.c",
+              "RelativeDocumentMoniker": "main.c",
+              "ToolTip": "C:\\Users\\sofia\\Documents\\Repositorios\\sc-2420-eval-u2-SofiaLezcanoArenas\\Game_loop_SDL2\\Ejercicio4\\movimiento_figuras\\main.c*",
+              "RelativeToolTip": "main.c*",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAAGAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-08-31T23:24:55.447Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
