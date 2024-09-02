@@ -66,6 +66,13 @@ void setup(void)
 
 void update(void)
 {
+    int time_to_wait = FRAME_TIME - (SDL_GetTicks() - last_frame_time);
+
+    if (time_to_wait > 0 && time_to_wait <= FRAME_TIME)
+    {
+        SDL_Delay(time_to_wait);
+    }
+
     float delta_time = (SDL_GetTicks() - last_frame_time) / 1000.0; // Get delta_time factor converted to seconds to be used to update objects
 
     last_frame_time = SDL_GetTicks(); // Store the milliseconds of the current frame to be used in the next one

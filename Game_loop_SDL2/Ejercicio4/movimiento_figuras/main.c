@@ -66,7 +66,14 @@ void setup(void)
 
 void update(void)
 {
-    float delta_time = (SDL_GetTicks() - last_frame_time) / 1000.0; // Get delta_time factor converted to seconds to be used to update objects
+    int time_to_wait = FRAME_TIME - (SDL_GetTicks() - last_frame_time);
+
+    if (time_to_wait>0 && time_to_wait <= FRAME_TIME)
+    {
+        SDL_Delay(time_to_wait);
+    }
+
+    float delta_time = (SDL_GetTicks() - last_frame_time) / 1000.0f; // Get delta_time factor converted to seconds to be used to update objects
 
     last_frame_time = SDL_GetTicks(); // Store the milliseconds of the current frame to be used in the next one
 
@@ -89,12 +96,12 @@ void update(void)
 
     //Movimiento de figuras
     //rectángulo hacia la izquierda
-    rectX -= 2 * delta_time;
+    rectX -= (2 * delta_time);
     //círculo hacia abajo
-    centerY -= 2 * delta_time;
+    centerY -= (2 * delta_time);
     //línea hacia arriba
-    ly1 -= 5 * delta_time;
-    ly2 -= 5 * delta_time;
+    ly1 -= (5 * delta_time);
+    ly2 -= (5 * delta_time);
 }
 
 void render(void) 
