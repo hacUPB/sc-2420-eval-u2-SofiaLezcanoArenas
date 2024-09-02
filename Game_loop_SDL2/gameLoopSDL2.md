@@ -13,7 +13,6 @@
 - **Render()**: al igual que update() se veía el mensaje rápidamente pasar por la consola, porque también se estaba ejecutando en cada iteración de un loop infinito.
 
 # Ejercicio 2: Calculando el Tiempo de Ejecución
-
 ## Tiempos:
 ![tiempos](https://github.com/hacUPB/sc-2420-eval-u2-SofiaLezcanoArenas/blob/main/Game_loop_SDL2/Ejercicio2/tiempos%20de%20ejecuci%C3%B3n.png)
 
@@ -25,10 +24,12 @@ Mantener una frecuencia de actualización constante evita procesos lentos, reduc
 
 Para concluir, mantener una frecuencia de actualización constante, es vital para garantizar una buena experiencia de usuario.
 
-## Ejercicio 3
+# Ejercicio 3
+![alt text](image.png)
+
+Al colocar `SDL_SetRenderDrawColor(renderer, 200, 0, 100, 255);` antes de cada figura y variar los factores RGB, se pudieron dibujar de diferentes colores las figuras.
 
 # Ejercicio 4: Movimiento de Figuras en Pantalla
-
 ``` C
 //Movimiento de figuras
     //rect�ngulo hacia la izquierda
@@ -40,8 +41,15 @@ Para concluir, mantener una frecuencia de actualización constante, es vital par
     ly2 += 1;
 ```
 
-Con estas líneas incluidas en update, se asegura un movimiento distinto para cada figura tal como se indica. Al ejecutar el programa, se observó un desplazamiento apresurado de cada una hasta que salieron del borde definido por la ventana. Esta velocidad depende del procesador del computador, así que para un mayor control sobre esto, se debería definir un FPS.
+Con estas líneas incluidas en update, se asegura un movimiento distinto para cada figura tal como se indica. Al ejecutar el programa, se observó un desplazamiento apresurado de cada una hasta que salieron del borde definido por la ventana. Esta velocidad depende del procesador del computador, así que para un mayor control sobre esto, se debería definir un número de FPS.
+
+En el proceso de especificar el número de FPS, faltó la implementación de un tiempo de espera para que todo se viera un poco más despacio.
+
+También están parando cuando se encuentran con los bordes.
 
 ## Ejercicio 5
+No se puede rotar un rectángulo si se dibuja con la función predeterminada para ello. Sin embargo, creo que si se manipulan adecuadamente, podría dibujarse con líneas y coordinar su movimiento para que el rectángulo aparente rotar.
+
+No hubo problemas con este ejercicio. Solo que también faltó configurar el tiempo de espera.
 
 ## Ejercicio 6

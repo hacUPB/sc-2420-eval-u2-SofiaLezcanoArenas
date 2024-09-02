@@ -78,8 +78,8 @@ void render(void)
     SDL_SetRenderDrawColor(renderer, 200, 0, 100, 255);
     SDL_Rect rect = 
     {
-        500, //posición en x
-        200, //posición en y
+        0, //posición en x
+        0, //posición en y
         100, //ancho
         60 //alto
     };

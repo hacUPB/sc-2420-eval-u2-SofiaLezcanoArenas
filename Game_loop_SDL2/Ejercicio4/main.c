@@ -47,12 +47,12 @@ int initialize_window(void) {
     return true;
 }
 
-void setup(void) 
+void setup(void)
 {
     centerX = 200;
     centerY = 100;
     radius = 40;
-    
+
     rectX = 500;
     rectY = 200;
     rectW = 100;
@@ -68,7 +68,7 @@ void update(void)
 {
     int time_to_wait = FRAME_TIME - (SDL_GetTicks() - last_frame_time);
 
-    if (time_to_wait>0 && time_to_wait <= FRAME_TIME)
+    if (time_to_wait > 0 && time_to_wait <= FRAME_TIME)
     {
         SDL_Delay(time_to_wait);
     }
@@ -96,22 +96,22 @@ void update(void)
 
     //Movimiento de figuras
     //rectángulo hacia la izquierda
-    rectX -= (2 * delta_time);
+    rectX -= (120 * delta_time);
     //círculo hacia abajo
-    centerY -= (2 * delta_time);
+    centerY -= (60 * delta_time);
     //línea hacia arriba
-    ly1 -= (5 * delta_time);
-    ly2 -= (5 * delta_time);
+    ly1 -= (120 * delta_time);
+    ly2 -= (120 * delta_time);
 }
 
-void render(void) 
+void render(void)
 {
     SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255); // (R, G, B, alpha) para definir el color a usar en lo próximo a dibujar
     SDL_RenderClear(renderer);
 
     // Rectángulo
     SDL_SetRenderDrawColor(renderer, 200, 0, 100, 255);
-    SDL_Rect rect = 
+    SDL_Rect rect =
     {
         rectX, //posición en x
         rectY, //posición en y
@@ -121,7 +121,7 @@ void render(void)
     SDL_RenderDrawRect(renderer, &rect); // si se quiere relleno, puede usarse SDL_RenderFillRect(renderer, referencia)
     //Círculo
     SDL_SetRenderDrawColor(renderer, 100, 0, 200, 255);
-    for (x = -radius; x <= radius; x++) 
+    for (x = -radius; x <= radius; x++)
     {
         y = (int)sqrt(radius * radius - x * x);
         SDL_RenderDrawPoint(renderer, centerX + x, centerY + y);
