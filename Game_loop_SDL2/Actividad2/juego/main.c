@@ -40,7 +40,7 @@ int initialize_window(void) {
         SDL_WINDOWPOS_CENTERED, //posición en y
         WINDOW_WIDTH, //ancho de la ventana
         WINDOW_HEIGHT, //alto de la ventana
-        5
+        SDL_WINDOW_SHOWN //------------------------- este era el problema para la visualización de la ventana
     );
     if (!window) {
         fprintf(stderr, "Error creating SDL Window.\n");
@@ -173,7 +173,6 @@ void update(void)
     }
 
     //Colisiones
-    //horizontales
     //lh1
     if (rectX >= lh1.x1 && rectX <= lh1.x2 && rectY <= lh1.y1 )
     {
@@ -238,94 +237,6 @@ void update(void)
         empezar = 0;
         teclaEspacio = 0;
     }
-    //verticales
-    //lv1
-    /*if (rectY <= lv1.y1 && rectY >= lv1.y2 && rectX <= lv1.x1)
-    {
-        rectX = 50;
-        rectY = 540;
-        empezar = 0;
-        teclaEspacio = 0;
-    }*/
-    ////lv2
-    //if (rectY <= lv2.y1 && rectY >= lv2.y2 && rectX <= lv2.x1)
-    //{
-    //    rectX = 50;
-    //    rectY = 540;
-    //    empezar = 0;
-    //    teclaEspacio = 0;
-    //}
-    ////lv3
-    //if (rectY >= lv3.y1 && rectY <= lv3.y2 && (rectX + rectW) >= lv3.x1)
-    //{
-    //    rectX = 50;
-    //    rectY = 540;
-    //    empezar = 0;
-    //    teclaEspacio = 0;
-    //}
-    ////lv4
-    //if (rectY <= lv4.y1 && rectY >= lv4.y2 && rectX <= lv4.x1)
-    //{
-    //    rectX = 50;
-    //    rectY = 540;
-    //    empezar = 0;
-    //    teclaEspacio = 0;
-    //}
-    ////lv5
-    //if (rectY >= lv5.y1 && rectY <= lv5.y2 && (rectX + rectW) >= lv5.x1)
-    //{
-    //    rectX = 50;
-    //    rectY = 540;
-    //    empezar = 0;
-    //    teclaEspacio = 0;
-    //}
-    ////lv6
-    //if (rectY <= lv6.y1 && rectY >= lv6.y2 && rectX <= lv6.x1)
-    //{
-    //    rectX = 50;
-    //    rectY = 540;
-    //    empezar = 0;
-    //    teclaEspacio = 0;
-    //}
-    ////lv7
-    //if (rectY >= lv7.y1 && rectY <= lv7.y2 && (rectX + rectW) >= lv7.x1)
-    //{
-    //    rectX = 50;
-    //    rectY = 540;
-    //    empezar = 0;
-    //    teclaEspacio = 0;
-    //}
-    ////lv8
-    //if (rectY >= lv8.y1 && rectY <= lv8.y2 && (rectX + rectW) >= lv8.x1)
-    //{
-    //    rectX = 50;
-    //    rectY = 540;
-    //    empezar = 0;
-    //    teclaEspacio = 0;
-    //}
-
-    //Colisiones con la ventana
-    //Rectángulo
-    //if (rectX < 0)
-    //{
-    //    rectX = 0; //para que no pase del borde izquierdo
-    //    rectV = -rectV; // para que se mueva en la dirección opuesta
-    //}
-    //if (rectX + rectW > WINDOW_WIDTH)
-    //{
-    //    rectX = WINDOW_WIDTH - rectW; //para que no pase del borde derecho
-    //    rectV = -rectV;
-    //}
-    //if (rectY < 0)
-    //{
-    //    rectY = 0; //para que no pase del borde superior
-    //    rectV = -rectV; // para que se mueva en la dirección opuesta
-    //}
-    //if (rectY + rectH > WINDOW_HEIGHT)
-    //{
-    //    rectY = WINDOW_HEIGHT - rectH;
-    //    rectV = -rectV;
-    //}
 }
 
 void render(void)
