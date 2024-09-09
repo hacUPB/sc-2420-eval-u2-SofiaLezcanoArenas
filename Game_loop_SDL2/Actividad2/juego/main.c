@@ -172,6 +172,138 @@ void update(void)
         empezar = 0;
     }
 
+    //Colisiones
+    //horizontales
+    //lh1
+    if (rectX >= lh1.x1 && rectX <= lh1.x2 && rectY <= lh1.y1 )
+    {
+        rectX = 50;
+        rectY = 540;
+        empezar = 0;
+        teclaEspacio = 0;
+    }
+    //lh2
+    if (rectX >= lh2.x1 && rectX <= lh2.x2 && rectY <= lh2.y1)
+    {
+        rectX = 50;
+        rectY = 540;
+        empezar = 0;
+        teclaEspacio = 0;
+    }
+    //lh3
+    if (rectX >= lh3.x1 && rectX <= lh3.x2 && rectY <= lh3.y1)
+    {
+        rectX = 50;
+        rectY = 540;
+        empezar = 0;
+        teclaEspacio = 0;
+    }
+    //lh4
+    if ((rectX + rectW) >= lh4.x1 && rectX <= lh4.x2 && rectY <= lh4.y1)
+    {
+        rectX = 50;
+        rectY = 540;
+        empezar = 0;
+        teclaEspacio = 0;
+    }
+    //lh5
+    if ((rectX + rectW) >= lh5.x1 && rectX <= lh5.x2 && (rectY + rectH) >= lh5.y1)
+    {
+        rectX = 50;
+        rectY = 540;
+        empezar = 0;
+        teclaEspacio = 0;
+    }
+    //lh6
+    if ((rectX + rectW) >= lh6.x1 && rectX <= lh6.x2 && (rectY + rectH) >= lh6.y1)
+    {
+        rectX = 50;
+        rectY = 540;
+        empezar = 0;
+        teclaEspacio = 0;
+    }
+    //lh7
+    if ((rectX + rectW) >= lh7.x1 && rectX <= lh7.x2 && (rectY + rectH) >= lh7.y1)
+    {
+        rectX = 50;
+        rectY = 540;
+        empezar = 0;
+        teclaEspacio = 0;
+    }
+    //lh8
+    if ((rectX + rectW) >= lh8.x1 && rectX <= lh8.x2 && (rectY + rectH) >= lh8.y1)
+    {
+        rectX = 50;
+        rectY = 540;
+        empezar = 0;
+        teclaEspacio = 0;
+    }
+    //verticales
+    //lv1
+    /*if (rectY <= lv1.y1 && rectY >= lv1.y2 && rectX <= lv1.x1)
+    {
+        rectX = 50;
+        rectY = 540;
+        empezar = 0;
+        teclaEspacio = 0;
+    }*/
+    ////lv2
+    //if (rectY <= lv2.y1 && rectY >= lv2.y2 && rectX <= lv2.x1)
+    //{
+    //    rectX = 50;
+    //    rectY = 540;
+    //    empezar = 0;
+    //    teclaEspacio = 0;
+    //}
+    ////lv3
+    //if (rectY >= lv3.y1 && rectY <= lv3.y2 && (rectX + rectW) >= lv3.x1)
+    //{
+    //    rectX = 50;
+    //    rectY = 540;
+    //    empezar = 0;
+    //    teclaEspacio = 0;
+    //}
+    ////lv4
+    //if (rectY <= lv4.y1 && rectY >= lv4.y2 && rectX <= lv4.x1)
+    //{
+    //    rectX = 50;
+    //    rectY = 540;
+    //    empezar = 0;
+    //    teclaEspacio = 0;
+    //}
+    ////lv5
+    //if (rectY >= lv5.y1 && rectY <= lv5.y2 && (rectX + rectW) >= lv5.x1)
+    //{
+    //    rectX = 50;
+    //    rectY = 540;
+    //    empezar = 0;
+    //    teclaEspacio = 0;
+    //}
+    ////lv6
+    //if (rectY <= lv6.y1 && rectY >= lv6.y2 && rectX <= lv6.x1)
+    //{
+    //    rectX = 50;
+    //    rectY = 540;
+    //    empezar = 0;
+    //    teclaEspacio = 0;
+    //}
+    ////lv7
+    //if (rectY >= lv7.y1 && rectY <= lv7.y2 && (rectX + rectW) >= lv7.x1)
+    //{
+    //    rectX = 50;
+    //    rectY = 540;
+    //    empezar = 0;
+    //    teclaEspacio = 0;
+    //}
+    ////lv8
+    //if (rectY >= lv8.y1 && rectY <= lv8.y2 && (rectX + rectW) >= lv8.x1)
+    //{
+    //    rectX = 50;
+    //    rectY = 540;
+    //    empezar = 0;
+    //    teclaEspacio = 0;
+    //}
+
     //Colisiones con la ventana
     //Rectángulo
     //if (rectX < 0)
